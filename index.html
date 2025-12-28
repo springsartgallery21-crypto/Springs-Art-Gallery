@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Selection Portal</title>
+    <title>Springs Art Gallery - Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Main Background -->
     <div class="main-wrapper">
         
-        <!-- Sidebar Menu (Glass Effect) -->
+        <!-- Sidebar Menu -->
         <nav class="sidebar">
-            <img src="logo.png" alt="Logo" class="menu-logo">
-            <h2 class="menu-title">SELECT TO OPEN FILE</h2>
+            <img src="logo.png" alt="Gallery Logo" class="menu-logo">
+            <h2 class="menu-title">Documents</h2>
             <ul class="file-menu">
-                <!-- 'target="viewer"' connects the link to the iframe below -->
                 <li><a href="guidelines.pdf" target="viewer">Open Guidelines</a></li>
                 <li><a href="application-form.pdf" target="viewer">Open Fillable Form</a></li>
                 <li><a href="floor-plan.pdf" target="viewer">Open Floor Plan</a></li>
             </ul>
         </nav>
 
-        <!-- Main Display Content -->
+        <!-- Viewer & Footer Area -->
         <main class="viewer-area">
+            
             <div class="glass-box">
-                <!-- This is the 'target' for the menu links -->
                 <iframe name="viewer" src="about:blank" title="File Viewer">
                     <p>Your browser does not support iframes. Please select a file from the menu.</p>
                 </iframe>
             </div>
+
+            <!-- Footer -->
+            <footer class="gallery-footer">
+                <div class="footer-content">
+                    <p>&copy; 2026 Springs Art Gallery. all rights reserved <div class="footer-links"></div></p>
+                    
+                        <a href="mailto:Nkosinathi.Gumede@ekurhuleni.gov.za">Contact Us</a>
+                    
+                    </div>
+                </div>
+            </footer>
+
         </main>
 
     </div>
